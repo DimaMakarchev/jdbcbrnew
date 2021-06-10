@@ -13,6 +13,7 @@ import java.util.logging.Logger;
 @SpringBootApplication
 public class Application implements CommandLineRunner {
     Logger logger = Logger.getLogger(Application.class.getName());
+
     @Autowired
     private CourseJdbcDAO courseJdbcDAO;
 

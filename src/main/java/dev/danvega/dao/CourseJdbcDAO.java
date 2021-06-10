@@ -16,13 +16,12 @@ import java.util.Optional;
 public class CourseJdbcDAO implements DAO<Course> {
 
     private static final Logger log = LoggerFactory.getLogger(CourseJdbcDAO.class);
-            @Autowired
+
     private JdbcTemplate jdbcTemplate;
 
-//    @Autowired
-//    public CourseJdbcDAO(JdbcTemplate jdbcTemplate) {
-//        this.jdbcTemplate = jdbcTemplate;
-//    }
+    public CourseJdbcDAO(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
 
     /**
      * Maps a row in the database to a Course
